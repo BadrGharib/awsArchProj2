@@ -1,0 +1,21 @@
+﻿Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),Create AWS Architecture Part1,Amazon Virtual Private Cloud (VPC),0,705.9,8470.8,USD,"Working days per month (22), DT Inbound: Internet (5 TB per month), DT Outbound: Amazon CloudFront (5 TB per month), DT Intra-Region: (5 TB per month), Number of Site-to-Site VPN Connections (1), Number of subnet associations (4)"
+My Estimate,US East (N. Virginia),,S3 Standard,0,136.98,1643.76,USD,S3 Standard storage (5 TB per month)
+My Estimate,US East (N. Virginia),,Data Transfer,0,0,0,USD,"DT Inbound: Internet (5 TB per month), DT Outbound: Amazon CloudFront (5 TB per month)"
+My Estimate,US East (N. Virginia),,Amazon EC2,0,5659.52,67914.24,USD,"Operating system (Linux), Quantity (16), Pricing strategy (On-Demand Instances 1 Year No Upfront), Storage amount (2 TB), Instance type (a1.2xlarge)"
+My Estimate,US East (N. Virginia),,Application Load Balancer,0,374.13,4489.56,USD,Number of Application Load Balancers (5)
+My Estimate,US East (N. Virginia),,Amazon RDS for PostgreSQL,0,11410.6,136927.2,USD,"Storage volume (General Purpose SSD (gp2)), Storage amount (5 TB per month), Nodes (5), Instance Type (db.m1.xlarge), Deployment Option (Multi-AZ), Pricing Model (OnDemand), Additional backup storage (20 TB)"
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Acknowledgement,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
+,,,,,,,,
+,,,,,,,,
+"To Increase the coast to 20,000$ :",,,,,,,,
+-RDS:,,,,,,,,
+"change the number of instance from 3 instance to 5 instaces and instance type from db.m1.large to db.m1.xlarge to increase the performace and backup storage from 10T to 20T ,",,,,,,,,
+-Load Balancer:,,,,,,,,
+"chnage Number of Application Load Balancers from 2 to 5 ,",,,,,,,,
+-EC2:,,,,,,,,
+ change the quantity of ec2 from 10 to 16 to increase the redundancy  and storage amount from 500GB to 1T,,,,,,,,
